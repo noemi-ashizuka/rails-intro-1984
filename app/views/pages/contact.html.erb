@@ -1,0 +1,17 @@
+<h1>Contact us</h1>
+
+<%# members = ["sylvain", "noemi", "doug", "yann", "sasha"] %>
+
+
+<form action="/contact" class="my-3" method="get">
+  <input type="text" placeholder="Who are you looking for?" class="form-control" name="member" value="<%= params[:member] %>">
+  <input type="text" placeholder="Who are you looking for?" class="form-control" name="id" >  
+  <input type="submit" class="btn btn-primary">
+</form>
+
+<ul>
+  <% @members.each do |member| %>
+    <li><%= member %></li>
+  <% end %>
+</ul>
+

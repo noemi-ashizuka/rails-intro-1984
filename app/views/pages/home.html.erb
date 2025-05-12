@@ -1,0 +1,12 @@
+<div class="container my-3">
+  <h1>Home Page</h1>
+
+  <!-- Rails helper: er + tab > -->
+  <% Time.now %>
+  <!-- Rails helper: pe + tab > -->
+  <h1><%= Time.now %></h1>
+
+  <!-- Rails helper: link_to (lt + tab) -->
+  <%= link_to "Contact", contact_path, class: "btn btn-primary"  %>
+  <%= link_to "About", about_path, class: "btn btn-primary"  %>
+</div>
